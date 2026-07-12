@@ -8,7 +8,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check:ai-hot-network": "node scripts/check-ai-hot-network.mjs",
+    "push:ai-hot-feishu": "pnpm check:ai-hot-network && node scripts/push-ai-hot-feishu.mjs"
   },
   "dependencies": {
     "react": "^19.2.6",
